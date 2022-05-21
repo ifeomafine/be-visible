@@ -32,6 +32,17 @@ body {
     padding: 20rem 15rem 15rem 15rem;
     color: rgb(255, 255, 255);
 }
+.text h2 {
+  font-size: 3.5rem;
+}
+.started {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  border-radius: 15px;
+  text-decoration: none;
+  color: rgb(231, 52, 52);
+  font-weight: 900;
+}
 #how , #test {
     text-align: center;
     padding: 2rem;
@@ -189,9 +200,9 @@ footer {
 #text {
 	display: inline-block;
 	vertical-align: middle;
-	color: orange;
+	color: rgb(255, 255, 255);
 	letter-spacing: .5rem;
-    font-size: 5rem;
+  font-size: 2.5rem;
 }
 
 #cursor {

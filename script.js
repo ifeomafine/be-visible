@@ -30,10 +30,12 @@ window.onclick = function(event) {
 
 // List of sentences
 var _CONTENT = [ 
-	"Twinkle, twinkle, little star", 
-	"How I wonder what you are", 
-	"Up above the world so high", 
-	"Like a diamond in the sky"
+	
+	'Get Noticed ...',
+	'Get Recognized ...',
+	'Get VISIBLE ...',
+	'Your DREAM JOB is a CLICK AWAY',
+	'Get STARTED TODAY!!!'
 ];
 
 // Current sentence being processed
