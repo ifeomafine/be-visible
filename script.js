@@ -1,3 +1,12 @@
+// FOR RESPONSIVE NAV-BAR
+const toggleButton = document.getElementsByClassName('toggle-button')[0];
+const navbarLinks = document.getElementsByClassName('navbar-links')[0];
+
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+    });
+
+// MODAL JAVASCRIPT
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -34,7 +43,7 @@ var _CONTENT = [
 	'Get Noticed ...',
 	'Get Recognized ...',
 	'Get VISIBLE ...',
-	'Your DREAM JOB is a CLICK AWAY',
+	'Your DREAM JOB is a CLICK AWAY ...',
 	'Get STARTED TODAY!!!'
 ];
 
@@ -101,6 +110,3 @@ function Delete() {
 
 // Start the typing effect on load
 _INTERVAL_VAL = setInterval(Type, 200);
-
-// HOW DO I STOP IT FROM REPEATING THE
-//  TEXT WHEN IT GETS TO THE END OF THE CONTENT BEING SHOWN?
