@@ -265,4 +265,32 @@ footer a  {
   #how h2 {
     text-align: center;
   }
+  .modal {
+    /* display: none; Hidden by default */
+    /* position: fixed; Stay in place */
+    /* z-index: 1; Sit on top */
+    /* padding-top: 100px; Location of the box */
+    left: 0;
+    top: 15%;
+    width:400px; /* Full width */
+    /* height: 100%; Full height */
+}
+  
+/* Modal Content */
+.modal-content {
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border: 2px solid #888;
+    width: 50%;
+}
+.input {
+  padding: 0.5rem;
+  margin: .5rem -1.5rem;
+  border-radius: 15px;
+}
+.sign-in button{
+  border-radius: 15px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
 }

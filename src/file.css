@@ -28,6 +28,7 @@ body {
 #theirBtn {
     background-color: rgb(255, 255, 255);
     padding: 1rem;
+    margin: 0rem 5rem;
     border-radius: 15px;
     text-decoration: none;
     color: rgb(231, 52, 52);
@@ -88,4 +89,36 @@ body {
       padding: 0.5rem 5rem;
       margin: .5rem 0rem;
       border-radius: 15px;
+}
+
+@media screen and (max-width:480px) {
+    .modal {
+        /* display: none; Hidden by default */
+        /* position: fixed; Stay in place */
+        /* z-index: 1; Sit on top */
+        /* padding-top: 100px; Location of the box */
+        left: -12rem;
+        top: 0;
+        width:810px; /* Full width */
+        /* height: 100%; Full height */
+    }
+      
+    /* Modal Content */
+    .modal-content {
+        background-color: rgb(255, 255, 255);
+        padding: 5px;
+        border: 2px solid #888;
+        width: 50%;
+    }
+    .input {
+      padding: 0.5rem 3rem;
+      margin: .5rem 1rem;
+      border-radius: 15px;
+    }
+    .log-in button{
+      border-radius: 15px;
+      padding: 0.5rem 3rem;
+      cursor: pointer;
+      margin: 0rem 4rem;
+    } 
 }
