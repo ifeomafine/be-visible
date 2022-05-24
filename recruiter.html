@@ -5,17 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RECRUITER PAGE</title>
+    <link rel="stylesheet" href="src/file.css">
 </head>
 <body>
-    <form action="#">
-        <h2>SIGN IN</h2>
-        <input type="email" name="" id="" placeholder="Email Address" required>
-        <br><br>
-        <input type="password" name="" id="" placeholder="Enter Password" required >
-        <br><br>
-        <input type="number" name="" id="" placeholder="Enter Token" required>
-        <br><br>
-        <button type="submit">SIGN IN</button>
-    </form>
+    <div class="recurit-text">
+        <h2>"Train people well enough so they can leave, <br>
+             treat them well enough so they don't want to."</h2>
+             <p>--Richard Branson</p>
+             <br>
+             <a href="#" class="recurit-login" id="theirBtn">SIGN IN</a>
+    </div>
+
+      <!-- Modal Sign In Button -->
+    <div id="recruitModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-body">
+      <span class="close-icon">&times;</span>
+      <form class="log-in" action="#">
+          <h4>SIGN IN</h4>
+          <input type="email" class="input" name="" id="" placeholder="Email Address" required>
+          <br>
+          <input type="password" class="input" name="" id="" placeholder="Password">
+          <br>
+          <input type="number" class="input" name="" id="" placeholder="Enter Token" required>
+          <br> <br> <br>
+          <button type="submit">Sign In</button>
+          <br> <br>
+          
+      </form>
+    </div>
+    <script>
+
+        // Get the modal
+        const modalBox = document.getElementById('recruitModal')
+        // Get the button that opens the modal
+        const button = document.getElementById('theirBtn')
+        // Get the <spanIcon> element that closes the modal
+        const spanIcon = document.querySelector('.close-icon')
+
+        // When the user clicks the button, open the modal 
+        button.addEventListener('click' , () => {
+            modalBox.style.display = "block"
+        })
+
+        // When the user clicks on <spanIcon> (x), close the modal
+        spanIcon.addEventListener('click' , () => {
+            modalBox.style.display = "none"
+        })
+
+    </script>
+
 </body>
 </html>

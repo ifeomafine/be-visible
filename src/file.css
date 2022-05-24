@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Rubik , sans-serif;
+}
+body {
+    background-image: url(/assets/RECURIT.jpg);
+    background-position: left top 20%;
+}
+.recurit-text {
+    padding: 8.5rem 3rem;
+    color:rgb(231, 52, 52) ;
+    font-style: italic;
+}
+.recurit-text h2 {
+    width: 400px;
+    font-size: 2rem;
+}
+.recurit-text p {
+    padding: 1rem 5rem;
+    color: rgb(85,26,139);
+    font-style: normal;
+    font-weight: 700;
+}
+#theirBtn {
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 15px;
+    text-decoration: none;
+    color: rgb(231, 52, 52);
+    font-weight: 900;
+  }
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: -18%;
+    top: 5%;
+    width: 80%; /* Full width */
+    /* height: 1rem; Full height */
+}
+  
+/* Modal Content */
+.modal-body {
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #888;
+    width: 50%;
+}
+  
+/* The Close Button */
+.close-icon {
+    color: rgb(231, 52, 52);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close-icon:hover,
+.close-icon:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.log-in h4 {
+      text-align: center;
+}
+.log-in {
+    line-height: 2rem;
+    padding: 0rem 2rem;
+    font-size: large;
+}
+.log-in button{
+    border-radius: 15px;
+    padding: 0.5rem 3rem;
+    cursor: pointer;
+}
+.log-in button:hover{
+    background-color: rgb(231, 52, 52);
+    color: rgb(255, 255, 255);
+}
+.input {
+      padding: 0.5rem 5rem;
+      margin: .5rem 0rem;
+      border-radius: 15px;
+}
