@@ -8,10 +8,33 @@
     <link rel="stylesheet" href="src/file.css">
 </head>
 <body>
+  <nav class="navbar">
+    <div class="left-nav">
+    <a href="index.html"><img id="top" src="assets/STERLING-LOGO.png" alt="Logo" width="150"></a>
+    </div>
+    <div class="right-nav">
+        <!--Start of responsive menu section -->
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <!-- End of responsive menu section -->
+    </div>
+    <div class="navbar-links">
+        <ul>
+            <li><a href="#how">How it works</a></li>
+            <li><a href="#test">Testimonials</a></li>
+            <li><a href="#" id="myBtn">Employee</a></li>
+            <li><a href="recruiter.html">Recuriter</a></li>
+        </ul>
+    </div>
+    </div>
+</nav>
     <div class="recurit-text">
-        <h2>"Train people well enough so they can leave, <br>
+        <h2 class="quotes">"Train people well enough so they can leave, <br>
              treat them well enough so they don't want to."</h2>
-             <p>--Richard Branson</p>
+             <p> -- <span class="display"> Richard Branson</span></p>
              <br>
              <a href="#" class="recurit-login" id="theirBtn">SIGN IN</a>
     </div>
@@ -26,35 +49,16 @@
           <h4>SIGN IN</h4>
           <input type="email" class="input" name="" id="" placeholder="Email Address" required>
           <br>
-          <input type="password" class="input" name="" id="" placeholder="Password">
-          <br>
+          <input type="password" class="input" name="" id="passy" placeholder="Password">
+          <h5>&nbsp;<input type="checkbox" name="" id="checkBox"> &nbsp; Show Password</h5>
           <input type="number" class="input" name="" id="" placeholder="Enter Token" required>
-          <br> <br> <br>
+          <br> <br>
           <button type="submit">Sign In</button>
           <br> <br>
           
       </form>
     </div>
-    <script>
-
-        // Get the modal
-        const modalBox = document.getElementById('recruitModal')
-        // Get the button that opens the modal
-        const button = document.getElementById('theirBtn')
-        // Get the <spanIcon> element that closes the modal
-        const spanIcon = document.querySelector('.close-icon')
-
-        // When the user clicks the button, open the modal 
-        button.addEventListener('click' , () => {
-            modalBox.style.display = "block"
-        })
-
-        // When the user clicks on <spanIcon> (x), close the modal
-        spanIcon.addEventListener('click' , () => {
-            modalBox.style.display = "none"
-        })
-
-    </script>
+   <script src="src/app.js"></script>
 
 </body>
 </html>

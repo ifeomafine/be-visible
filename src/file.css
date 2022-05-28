@@ -1,5 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Rubik , sans-serif;
+}
+body {
+    background-color: white;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    color:rgb(231, 52, 52) ;
+    background-color: rgb(255, 255, 255);
+}
+.left-nav {
+    display: flex;
+    cursor: pointer;
+}
+.navbar-links ul {
+  display: flex;
+  list-style: none;
+}
+.navbar-links li a {
+  padding: 1rem;
+  text-decoration: none;
+  color: rgb(231, 52, 52);
+  display: block;
+}
+.navbar-links ul :hover {
+  background-color: rgb(85,26,139);
+  color: rgb(255, 255, 255);
+}
 * {
     box-sizing: border-box;
     padding: 0;
@@ -9,6 +42,7 @@
 body {
     background-image: url(/assets/RECURIT.jpg);
     background-position: left top 20%;
+    background-attachment: fixed;
 }
 .recurit-text {
     padding: 8.5rem 3rem;
@@ -24,6 +58,7 @@ body {
     color: rgb(85,26,139);
     font-style: normal;
     font-weight: 700;
+    font-size: 1.5rem;
 }
 #theirBtn {
     background-color: rgb(255, 255, 255);

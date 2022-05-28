@@ -16,6 +16,8 @@ body {
 }
 .left-nav {
     display: flex;
+    cursor: pointer;
+
 }
 .navbar-links ul {
   display: flex;
@@ -35,10 +37,13 @@ body {
     text-align: center bottom;
     background-image: url(/assets/CUT.jpg); /*Photo by Cut in A Moment on Unsplash*/
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 30%;
     background-size: cover;
+    background-color: rgb(231, 161, 231);
+    background-attachment: fixed;
     color: rgb(255, 255, 255);
-    padding: 18rem 5rem;
+    padding: 20rem 5rem;
+    line-height: 2rem;
 }
 .text h2, h3{
 	color:rgb(231, 52, 52) ;
@@ -50,7 +55,7 @@ body {
   background-color: rgb(231, 52, 52);
   width: fit-content;
   padding: 1.5rem;
-  margin: -22rem 0rem 20rem 80%;
+  margin: -23.5rem 0rem 20rem 80%;
   color: rgb(255, 255, 255);
 }
 .started {
@@ -193,25 +198,26 @@ footer a  {
 /* ANIMATED TEXT CONTENT */
   #container {
 	text-align: left;
+  position: absolute;
 }
 #text {
 	display: inline-block;
 	vertical-align: middle;
 	color: rgb(255, 255, 255);
 	letter-spacing: .5rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
-#cursor {
+.begin {
 	display: inline-block;
 	vertical-align: middle;
-	width: 3px;
-	height: 50px;
-	background-color: orange;
-	animation: blink .75s step-end infinite;
+	color: rgb(255, 255, 255);
+	letter-spacing: .5rem;
+  font-size: 2.2rem;
+  padding: 1em 0em 0em ;
 }
 @keyframes blink {
 	from, to { 
-		background-color: transparent 
+		background-color: white; 
 	}
 }
 /* MEDIA QUERY ADDED */
@@ -248,7 +254,7 @@ footer a  {
     padding: 20rem 2rem ;
   }
   .text h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 0rem 0rem 1rem 0rem;
   }
   .text h3 {

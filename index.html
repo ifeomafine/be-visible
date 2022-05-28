@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar">
         <div class="left-nav">
-        <img id="top" src="assets/STERLING-LOGO.png" alt="Logo" width="150">
+        <a href="#"><img id="top" src="assets/STERLING-LOGO.png" alt="Logo" width="150"></a>
         </div>
         <div class="right-nav">
             <!--Start of responsive menu section -->
@@ -32,15 +32,16 @@
         </div>
         </div>
     </nav>
-    <div class="text">
+  <div class="text">  <!-- This is the section for the typewriter effect -->
         <h2>Welcome</h2>
+        <br>
         <h3> #STERLINGHuman,</h3>
         <div id="container">
-        <div id="text"></div><div id="cursor"></div>
-        <br> <br> <br> 
-        <a class="started" href="signup.html">GET STARTED</a>
-        
+        <div class="begin">Get <span id="text"></span> </div>
+        <div id="cursor"></div>
         </div>
+        <br> <br> <br>
+        <a class="started" href="signup.html">GET STARTED</a>
     </div>
     <div class="name" ><h4>BE VISIBLE</h4></div>
     <div id="how">
@@ -54,17 +55,6 @@
                 </p>
         </div>
     </div>
-    <!-- <div class="name" ><h4>BE VISIBLE</h4></div>
-    <div id="how">
-        <h2>How it works</h2>
-        <div class="epistle">
-            <img src="assets/how-it-works.png" alt="Image by John Hain from Pixabay " width="100">
-        <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, ipsam.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, consequuntur?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, voluptatum!
-        </p>
-        </div> -->
     <div id="test">
         <h2>Testimonials</h2>
     </div>
@@ -116,13 +106,16 @@
     <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
-      <form class="sign-in" action="#">
+      <form class="sign-in" action="e-dashboard.html">
           <h4>SIGN IN</h4>
           <input type="email" class="input" name="" id="" placeholder="Email Address" required>
+          <small></small>
           <br>
-          <input type="password" class="input" name="" id="" placeholder="Password">
+          <input type="password" class="input" name="" id="passy" placeholder="Password">
+          <small></small>
+          <h5>&nbsp;<input type="checkbox" name="" id="checkBox"> &nbsp; Show Password</h5>
           <br>
-          <button type="submit">Sign In</button>
+          <button class="oyaBtn" type="submit">Sign In</button>
           <br> <br>
           <a href="#">Forgot Password</a> 
           <br>  <br>
