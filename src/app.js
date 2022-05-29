@@ -44,4 +44,13 @@ const author = document.querySelector('.display')
 		}
 	
 	});
-  }, 5000)
+  }, 6000)
+
+  // FOR RESPONSIVE NAV-BAR
+const toggleButton = document.getElementsByClassName('toggle-button')[0];
+const navbarLinks = document.getElementsByClassName('navbar-links')[0];
+
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+    });
+

@@ -33,12 +33,27 @@ body {
   background-color: rgb(85,26,139);
   color: rgb(255, 255, 255);
 }
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: Rubik , sans-serif;
-}
+/* RESPONSIVE NAV-BAR DESIGN */
+
+/* Start */
+.toggle-button {
+    position: absolute;
+    top: 2.5rem;
+    margin: -.8rem 0rem 0rem 0rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 1.3rem;
+  }
+  .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(231, 52, 52) ;
+    border: radius 10px;
+  }
+  /* End */
 body {
     background-image: url(/assets/RECURIT.jpg);
     background-position: left top 20%;

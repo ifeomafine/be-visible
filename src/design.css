@@ -8,11 +8,10 @@
 }
 .image {
     opacity: 0.5;
-    overflow: hidden;
+    z-index: 1;
 }
 body {
     background-color: rgba(243, 245, 243, 0.7);
-    
 }
 .navbar {
     display: flex;
@@ -39,3 +38,38 @@ body {
   background-color: rgb(85,26,139);
   color: rgb(255, 255, 255);
 }
+/* RESPONSIVE NAV-BAR DESIGN */
+
+/* Start */
+.toggle-button {
+    position: absolute;
+    top: 2.5rem;
+    margin: -.8rem 0rem 0rem 0rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 1.3rem;
+  }
+  .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(231, 52, 52) ;
+    border: radius 10px;
+  }
+  /* End */
+  .contentBox {
+      /* text-align: center bottom; */
+      background-image: url(/assets/puzzle.jpg);
+      background-repeat: no-repeat;
+      background-position: center 30%;
+      background-size: cover;
+      background-color: rgb(231, 161, 231);
+      background-attachment: fixed;
+      color: rgb(231, 52, 52) ;
+      padding: 0rem 5rem 20rem 5rem;
+      /* line-height: 2.5rem; */
+      opacity: 0.5;
+
+  }

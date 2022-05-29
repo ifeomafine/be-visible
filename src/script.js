@@ -16,7 +16,7 @@ var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
 
 // Get the button that submits the form
-var oyaBtn = document.querySelector(".oyaBtn") 
+// var oyaBtn = document.querySelector(".oyaBtn") 
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -38,6 +38,16 @@ Show.addEventListener('click' , () => {
 	let type = password.getAttribute('type') === 
 	'password' ? 'text' : 'password';
 	password.setAttribute('type' , type);
+})
+// FORM VALIDATION
+let email = document.querySelector('.input')
+let passWord = document.querySelector('#passy')
+let small = document.querySelector('.small')
+
+email.addEventListener('submit' , () => {
+	if(email.value != 'sterling.ng') {
+		small.textContent = 'Email must be a STERLING MAILING BOX'
+	}
 })
 
 // ANIMATED TYPEWRITER

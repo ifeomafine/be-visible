@@ -43,7 +43,7 @@ body {
     background-attachment: fixed;
     color: rgb(255, 255, 255);
     padding: 20rem 5rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
 }
 .text h2, h3{
 	color:rgb(231, 52, 52) ;
@@ -54,8 +54,8 @@ body {
   border-radius: 50%;
   background-color: rgb(231, 52, 52);
   width: fit-content;
-  padding: 1.5rem;
-  margin: -23.5rem 0rem 20rem 80%;
+  padding: 2rem 0rem;
+  margin: -24.5rem 0rem 20rem 80%;
   color: rgb(255, 255, 255);
 }
 .started {
@@ -89,6 +89,8 @@ body {
     justify-content: center;
     flex-flow: wrap;
     gap: 5%;
+    transition: ease-in-out;
+    transition-delay: 2s;
 }
 .cards :hover {
     transform: scale(1.2); /* this is to cause the card zoom*/
@@ -251,52 +253,64 @@ footer a  {
     overflow-wrap: break-word;
   }
   .text {
-    padding: 20rem 2rem ;
+    padding: 20rem 0.5rem ;
+    line-height: 3rem;
   }
   .text h2 {
     font-size: 2rem;
     padding: 0rem 0rem 1rem 0rem;
   }
   .text h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
-  #text {
-    font-size: 1rem;
+  #text , .begin {
+    font-size: 1.5rem;
   }
   .epistle {
     display: inline-block;
-    justify-items: center;
-    width: 450px;
+    padding-left: 2.5rem;
+    /* justify-items: center; */
+  }
+  .epistle {
+    display: inline-block;
+    /* justify-items: center; */
   }
   #how h2 {
     text-align: center;
+  }
+  .name {
+   display: none;
   }
   .modal {
     /* display: none; Hidden by default */
     /* position: fixed; Stay in place */
     /* z-index: 1; Sit on top */
     /* padding-top: 100px; Location of the box */
-    left: 0;
-    top: 15%;
-    width:400px; /* Full width */
+    left: -6rem;
+    /* top: 15%; */
+    width:500px; /* Full width */
     /* height: 100%; Full height */
 }
   
 /* Modal Content */
 .modal-content {
     background-color: rgb(255, 255, 255);
-    padding: 5px;
+    padding: 1px;
     border: 2px solid #888;
-    width: 50%;
+    width: fit-content;
 }
 .input {
-  padding: 0.5rem;
-  margin: .5rem -1.5rem;
+  padding: 0.5rem 1rem ;
+  margin: .5rem 1rem 0rem 1rem;
   border-radius: 15px;
+}
+.showPassy {
+  margin: 0.5rem;
 }
 .sign-in button{
   border-radius: 15px;
   padding: 0.5rem;
+  margin: 0rem 1rem;
   cursor: pointer;
 }
 }
