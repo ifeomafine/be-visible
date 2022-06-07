@@ -9,27 +9,19 @@ toggleButton.addEventListener('click', () => {
 
 // MODAL JAVASCRIPT
 
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the button that submits the form
-// var oyaBtn = document.querySelector(".oyaBtn") 
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
+let modal = document.getElementById("myModal"); // Get the modal
+let btn = document.getElementById("myBtn"); // Get the button that opens the modal
+let span = document.getElementsByClassName("close")[0]; // Get the <span> element that closes the modal
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
 }
-
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+
 // TO TOGGLE PASSWORD VISIBILITY
 let Show = document.getElementById('checkBox');
 let password = document.getElementById('passy')
@@ -39,6 +31,7 @@ Show.addEventListener('click' , () => {
 	'password' ? 'text' : 'password';
 	password.setAttribute('type' , type);
 })
+
 // FORM VALIDATION
 let email = document.querySelector('.input')
 let passWord = document.querySelector('#passy')
@@ -53,31 +46,22 @@ email.addEventListener('submit' , () => {
 // ANIMATED TYPEWRITER
 
 // List of sentences
-let _CONTENT = [ 
-	
+let _CONTENT = [ 	
 	'Noticed ...',
 	'Recognized ...',
 	'VISIBLE ...',
 	'your DREAM JOB in a CLICK ...',
 	'STARTED TODAY!!!'
 ];
-
-// Current sentence being processed
-let part = 0;
-
-// Character number of the current sentence being processed 
-let partIndex = 0;
+let part = 0; // Current sentence being processed
+let partIndex = 0; // Character number of the current sentence being processed 
 
 // Holds the handle returned from setInterval
 let intervalVAL;
+let element = document.querySelector("#text"); // Element that holds the text
+let cursor = document.querySelector("#cursor"); // Cursor element 
 
-// Element that holds the text
-let element = document.querySelector("#text");
-
-// Cursor element 
-let cursor = document.querySelector("#cursor");
-
-// Implements typing effect
+// Implement typing effect
 function Type() { 
 	// Get substring with 1 characater added
 	let text =  _CONTENT[part].substring(0, partIndex + 1);

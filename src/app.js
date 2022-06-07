@@ -46,6 +46,18 @@ const author = document.querySelector('.display')
 	});
   }, 6000)
 
+  // GET STARTED BUTTON 
+  function myFunction() {
+	alert("Welcome!");
+	body.style.display = 'none'
+  }
+
+const start = document.querySelector('.started')
+
+start.addEventListener('load', () => {
+	onload.alert('oya na')
+});
+
   // FOR RESPONSIVE NAV-BAR
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
 const navbarLinks = document.getElementsByClassName('navbar-links')[0];
@@ -53,4 +65,7 @@ const navbarLinks = document.getElementsByClassName('navbar-links')[0];
 toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active')
     });
+
+	// FOR FORM VALIDATION
+
 

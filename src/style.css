@@ -43,7 +43,7 @@ body {
     background-attachment: fixed;
     color: rgb(255, 255, 255);
     padding: 20rem 5rem;
-    line-height: 2.5rem;
+    line-height: 2rem;
 }
 .text h2, h3{
 	color:rgb(231, 52, 52) ;
@@ -66,9 +66,15 @@ body {
   color: rgb(231, 52, 52);
   font-weight: 900;
 }
-#test , #how {
+#how {
     text-align: center;
     padding: 3rem;
+    color:rgb(231, 52, 52) ;
+    line-height: 2rem;
+}
+#test {
+    text-align: center;
+    padding: 3rem 3rem 6.5rem 3rem;
     color:rgb(231, 52, 52) ;
     line-height: 2rem;
 }
@@ -92,8 +98,13 @@ body {
     transition: ease-in-out;
     transition-delay: 2s;
 }
+.cards img {
+  border-radius: 50%;
+  box-shadow: 2px 4px 8px 1px rgb(231, 52, 52);
+  margin: -5rem 0rem 0rem 0rem;
+}
 .cards :hover {
-    transform: scale(1.2); /* this is to cause the card zoom*/
+    transform: scale(1.1); /* this is to cause the card zoom*/
   }
 .first-card , .second-card , .third-card {
     width: 300px;
@@ -103,6 +114,7 @@ body {
     padding: 1rem;
     line-height: 2rem;
     margin: 1.5rem;
+    border-radius: 12px;
 }
 footer {
     display: flex;
@@ -313,4 +325,7 @@ footer a  {
   margin: 0rem 1rem;
   cursor: pointer;
 }
+}
+.first-card , .second-card , .third-card {
+  margin: 1.5rem 1.5rem 4.5rem 1.5rem;
 }
